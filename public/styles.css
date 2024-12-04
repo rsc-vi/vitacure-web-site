@@ -1,12 +1,31 @@
 /* Geral */
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.cabecalho{
+  background-color: blue;
+}
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #f7f7f7;
+    background-color: #1f1e1e;
     margin: 0;
     padding: 0;
     color: #333;
   }
-  
+  .quadrado{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    margin: 5px;
+}
+.rodape{
+  background-color: green;
+  position: absolute;
+  bottom:0%;
+  width: 100%;
+}
   h1 {
     font-size: 3rem;
     font-weight: 600;
