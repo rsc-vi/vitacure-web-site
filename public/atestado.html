@@ -15,15 +15,59 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="styles.css">
+    <style>
+      /* Fundo da página cinza escuro e texto branco */
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; /* Garante que o body tenha no mínimo a altura da tela */
+        background-color: #333333; /* Fundo cinza escuro */
+        color: white; /* Cor da fonte branca */
+        font-family: 'Roboto', sans-serif;
+      }
+
+      /* Cabeçalho azul */
+      header {
+        background-color: #007bff; /* Azul */
+        color: white;
+      }
+
+      /* Rodapé azul */
+      footer {
+        background-color: #007bff; /* Azul */
+        color: white;
+      }
+
+      /* Ajustes para links e botões */
+      a, .btn-light {
+        color: white;
+      }
+
+      /* Ajustes no texto */
+      h1, h2, h3 {
+        color: white;
+      }
+
+      /* Estilo específico para o botão "Home" com fonte azul */
+      .btn-light {
+        color: #007bff; /* Cor do texto azul */
+        border-color: #007bff; /* Cor da borda azul */
+      }
+
+      .btn-light:hover {
+        background-color: #007bff; /* Fundo azul ao passar o mouse */
+        color: white; /* Texto branco ao passar o mouse */
+      }
+    </style>
   </head>
   <body>
-    <header class="bg-primary text-white py-3 d-flex justify-content-between align-items-center">
+    <header class="py-3 d-flex justify-content-between align-items-center">
       <a href="index.html" class="btn btn-light ms-3">
         <i class="fas fa-home"></i> Home
       </a>
       <h1 class="text-center flex-grow-1 m-0">Atestado Médico VitaCure</h1>
     </header>
+
     <main class="container my-5">
       <h2>Informações sobre o Atestado Médico</h2>
       <p>A emissão de atestados médicos no hospital VitaCure é realizada por profissionais qualificados e segue todas as normas vigentes para garantir a validade e autenticidade do documento.</p>
@@ -44,7 +88,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
+    <footer class="text-center py-3">
       <p>&copy; 2024 VitaCure. Todos os direitos reservados.</p>
     </footer>
 
