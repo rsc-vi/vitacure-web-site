@@ -18,9 +18,27 @@ class ProdutosService {
         autor: "Ana Maria",
         data: "2023-12-05"
       },
-      //... mais itens
+      
+
     ];
+    getProdutoById(id) {
+      return this.produtos.find(produto => produto?.id === parseInt(id));
+    }
+    getProdutos() {
+      return this.produtos;
+    }
   
- 
+    getComentariosByProdutosId(idProduto) {
+      return this.comentarios.filter(comentario => comentario.idProduto === parseInt(idProduto));
+    }
+  
+    addComentario(produto,comentario) {
+      this.comentarios.push({...comentario});
+      return comentario;
+    }
+  
   }
+  const produtosService = new ProdutosService();
+
+  export default produtosService;
   
